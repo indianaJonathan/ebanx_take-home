@@ -53,7 +53,7 @@ module.exports = {
                     destination_account = data.find(acc => acc.id === destination);
                     debit(origin_account.id, amount);
                     deposit(destination_account.id, amount);
-                    origin_acount = data.find(acc => acc.id === origin);
+                    origin_account = data.find(acc => acc.id === origin);
                     destination_account = data.find(acc => acc.id === destination);
                     return res.status(201).json({
                         origin: origin_account,
